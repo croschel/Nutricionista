@@ -37,7 +37,26 @@ if(pesoValido == true && alturaValida == true){
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click",function(event){
     event.preventDefault();
-    
-    console.log("botão clicado");
+    //console.log("botão clicado");
+    var form = document.querySelector("#form-adiciona");
+    //Armazenar todos os campos inputs em variaveis
+    var nome = form.nome.value;
+    var peso = form.peso.value;
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
 
+    //criar uma tag tr (linha)
+    var pacienteTr = document.createElement("tr");
+    //criar uma tag td (elemento)
+    var nomeTd = document.createElement("td");
+    var pesoTd = document.createElement("td");
+    var alturaTd = document.createElement("td");
+    var gorduraTd = document.createElement("td");
+    var imcTd = document.createElement("td");
+
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+    
 });
