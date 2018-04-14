@@ -142,3 +142,16 @@ button[disabled=disabled], button:disabled {
 	opacity: 0;
 	transition: 0.5s;
 }
+#procurar-paciente{
+	width: 12em;
+	height: 2.5em;
+	margin-bottom: 10px;
+}
+#label-filtro{
+	display: inline;
+	font-size: 1.5em;
+	color: rgb(87, 85, 85);
+}
+.invisivel{
+	display: none;
+}

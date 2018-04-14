@@ -1,5 +1,5 @@
-var titulo = document.querySelector(".titulo-principal");
-titulo.textContent = "Pedido de Viatura";
+// var titulo = document.querySelector(".titulo-principal");
+// titulo.textContent = "Pedido de Viatura";
 
 var pacientes = document.querySelectorAll(".paciente");
 
@@ -15,10 +15,9 @@ var altura = tdAltura.textContent;
 var alturaValida = validaAltura(altura);
 var pesoValido = validaPeso(peso);
 
-
-if(pesoValido && alturaValida){
-    tdImc.textContent =  calculaImc(peso,altura);    
-}
+    if(pesoValido && alturaValida){
+        tdImc.textContent =  calculaImc(peso,altura);    
+    }
 
 }
 
